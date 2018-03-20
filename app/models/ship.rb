@@ -3,6 +3,10 @@ class Ship
   
   @@all = []
   
+  def initialize(name, type, booty)
+    @name=name 
+    
+  
   def self.all 
     @@all 
   end 

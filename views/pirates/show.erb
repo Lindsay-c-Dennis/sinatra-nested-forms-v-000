@@ -5,16 +5,9 @@
   <h4>Height: <%= @pirate.height %></h4>
 </div><br>
 
-<h2>Display your first ship here</h2>
-  <div class="ship">
-    <p>Name: <%=  %></p><br>
-    <p>Type: <%=  %></p><br>
-    <p>Booty: <%=  %></p><br>
-  </div><br>
-
-<h2>Display your second ship here</h2>
-  <div class="ship">
-    <p>Name:  <%= %></p><br>
-    <p>Type: <%= Ship.last.type %></p><br>
-    <p>Booty: <%= Ship.last.booty %></p><br>
-  </div><br>
+<h1>Ships:</h1>
+<%= Ships.each do |ship| %>
+  <h3>Name: <%=ship.name%></h3><br>
+  <h3>Type: <%=ship.type%></h3><br>
+  <h3>Booty: <%=ship.booty%></h3><br
+  <% end %>

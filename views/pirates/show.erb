@@ -6,10 +6,11 @@
 </div><br>
 
 <h1>Ships:</h1>
-<%= Ships.each do |ship| %>
+<% Ships.each do |ship| %>
   <div class="ship">
     <%= Ship.all.each do |ship| %>
       <h3>Name: <%=ship.name%></h3><br>
       <h3>Type: <%=ship.type%></h3><br>
       <h3>Booty: <%=ship.booty%></h3><br>
+      <% end %>
   </div><br>
